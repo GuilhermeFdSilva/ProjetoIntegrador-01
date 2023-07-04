@@ -13,6 +13,8 @@
     <!-- Meu Css -->
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/padrao.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -24,9 +26,9 @@
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg" id="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/Logo.jpeg" alt="Aquarela" height="70">
+            <div class="container-fluid" id="navContainer">
+                <a class="navbar-brand" href="#" id="logoNav">
+                    <img src="img/LogoNav.jpeg" alt="Aquarela" height="70">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -54,7 +56,7 @@
     </header>
 
     <!-- Corpo -->
-    <main class="container">
+    <main class="container" id="main">
         <section class="row mb-3">
             <div class="col-lg-12">
                 <h1>Aquarela</h1>
@@ -65,50 +67,53 @@
             </div>
         </section>
         <section class="row">
-            <div class="col-lg-12">
-                <h2>Aqua club</h2>
-            </div>
-        </section>
-        <section class="row">
-            <div class="col-lg-10 mb-5 mx-auto">
-                <div class="card w-100 text-center">
-                    <img src="img/quartos/resort.jpg" class="card-img-top" alt="">
+            <div class="col-lg-12 mb-5">
+                <div class="card text-center">
+                    <img src="img/quartos/resort.jpeg" class="card-img-top" alt="Piscina do Resort">
                     <div class="card-body">
                         <p>
                             Venha desfrutar de uma estadia inesquecível no nosso quarto especial, equipado com uma
                             jacuzzi, uma lareira e uma vista panorâmica para o mar. Você vai se sentir em um paraíso
                             privado, cercado de conforto e tranquilidade.
                         </p>
-                        <a href="#" class="btn">Reserve</a>
+                        <a href="#" class="btn" id="btn1">Reserve</a>
                     </div>
                 </div>
         </section>
-        <section id="quem-somos" class="row">
-            <div class="col-lg-6">
-                <img src="images/quem-somos.png" alt="Foto da Maria tricotando" />
-            </div>
-            <div class="col-lg-6 mb-5">
-                <h2>Por que Aquarela?</h2>
-                <p>
-                    Se você está procurando um lugar para relaxar e aproveitar a natureza, o resort Aquarela é a escolha
-                    ideal. O resort conta com chalés bem separados, que oferecem privacidade, conforto e uma vista
-                    incrível. Você pode desfrutar de uma piscina aquecida, um spa, um restaurante com culinária regional
-                    e diversas atividades ao ar livre, como trilhas, passeios de bicicleta e cavalgada. O resort
-                    Aquarela é o destino perfeito para quem quer fugir do estresse da cidade e se conectar com a beleza
-                    e a tranquilidade do campo.
-                </p>
-                <a class="btn" href="#">Leia mais</a>
+        <section class="card mb-5 w-100">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/Logo.jpeg" class="img-fluid rounded-start" alt="Logo Aquarela">
+                </div>
+                <div class="col-md-8" id="containerAquarela">
+                    <div class="card-body">
+                        <h2 class="card-title">Por que Aquarela?</h2>
+                        <p class="card-text">
+                            Se você está procurando um lugar para relaxar e aproveitar a natureza, o resort Aquarela é a
+                            escolha
+                            ideal. O resort conta com chalés bem separados, que oferecem privacidade, conforto e uma
+                            vista
+                            incrível. Você pode desfrutar de uma piscina aquecida, um spa, um restaurante com culinária
+                            regional
+                            e diversas atividades ao ar livre, como trilhas, passeios de bicicleta e cavalgada. O resort
+                            Aquarela é o destino perfeito para quem quer fugir do estresse da cidade e se conectar com a
+                            beleza
+                            e a tranquilidade do campo.
+                        </p>
+                        <a class="btn" href="#" id="btn2">Leia mais</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Rodape -->
-    <footer>
-        <div class="container">
+    <footer id="rodape">
+        <div class="container mb-5">
             <div class="row">
                 <div class="col-lg-4">
                     <h2>Endereço</h2>
-                    <ul>
+                    <ul class="itemRodape">
                         <li>Estr. do Coqueiro 123</li>
                         <li>Prado Novo São Lourenço do Sul - RS</li>
                         <iframe
@@ -120,7 +125,7 @@
                 </div>
                 <div class="col-lg-4">
                     <h2>Links</h2>
-                    <ul>
+                    <ul class="itemRodape">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Quartos</a></li>
                         <li><a href="#">Quem Somos?</a></li>
@@ -129,16 +134,16 @@
                 <div class="col-lg-4">
                     <h2>Newsletter</h2>
                     <p>Cadastre-se para receber ofertas e novidades!</p>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Digite seu e-mail..." />
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button">Enviar</button>
-                        </div>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Digite seu Email..."
+                            aria-label="Digite seu Email..." id="inputFooter">
+                        <button class="btn" type="button" id="btnFooter">Enviar</button>
                     </div>
+
                 </div>
             </div>
         </div>
-        <p class="copy">&copy; Todos os direitos reservados 2023</p>
+        <p class="text-center">&copy; Todos os direitos reservados 2023</p>
     </footer>
 
     <!-- Script do Bootstrap -->

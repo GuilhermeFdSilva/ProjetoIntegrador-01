@@ -1,3 +1,15 @@
 #navbar {
     box-shadow: 0 0 5px rgba(25, 25, 25, 0.5);
+    padding-top: 0;
+    padding-bottom: 0;
+    cursor: default;
+    background-color: white;
+}
+
+#logoNav {
+    padding: 0;
+}
+
+#navContainer {
+    padding: 0 25px;
 }
