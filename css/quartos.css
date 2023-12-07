@@ -5,3 +5,24 @@
 #imagem1 {
     display: flex;
 }
+
+@media (max-width: 770px) {
+    #quarto1, #quarto2 {
+        height: fit-content;
+    }
+
+    #img1 {
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 0 !important;
+    }
+
+    #img2 {
+        width: 100%;
+        border-bottom-left-radius: 6px;
+        border-top-right-radius: 0 !important;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+}
